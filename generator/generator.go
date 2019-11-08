@@ -60,7 +60,7 @@ func WithValidityInDays(validityInDays uint64) CertOpt {
 	}
 }
 
-// Newcreates and returns a new Generator based in the given `opts`.
+// New creates and returns a new Generator based in the given `opts`.
 func New(opts ...CertOpt) *Generator {
 	gen := &Generator{
 		orgName:  cert.DefaultOrgName,
